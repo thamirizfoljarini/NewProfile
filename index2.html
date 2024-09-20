@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Eyes</title>
+    <link rel="stylesheet" href="style.css"> <!-- Estilos gerais -->
+    <link rel="stylesheet" href="style2.css"> <!-- Estilos específicos -->
+    <script src="script2.js" defer></script> <!-- Script para a página de livros -->
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Sacramento', cursive;">Ressonância Encantada</h1>
+        <p style="font-family: 'Comic Sans MS', cursive; font-size: 18px; color: #222527;">
+            "Nas páginas encantadas encontramos refúgio onde a realidade desvanece." <br>
+            (Thamiriz Foljarini)
+        </p>
+    </header>
+
+    <section id="buttons">
+        <div class="button-container">
+            <button onclick="location.href='index.html'">Fotos</button> <!-- Navega para a página de fotos -->
+            <button onclick="location.href='index3.html'">Sobre Mim</button> <!-- Navega para a página "Sobre Mim" -->
+        </div>
+    </section>
+
+    <main>
+        <section id="quotes">
+            <h2>Citações</h2>
+            <div class="quote-container">
+                <!-- Citações inspiradoras -->
+                <div class="quote">
+                    <p>"Se você não tem nada a perder, o mundo todo é sua recompensa." <br>- Livro: Six of Crows</p>
+                </div>
+                <div class="quote">
+                    <p>"Às vezes, o silêncio é a resposta mais alta." <br>- Livro: O Nome do Vento</p>
+                </div>
+                <div class="quote">
+                    <p>"O medo pode ser controlado. Mas só se admitirmos que ele está lá." <br>- Livro: A Prisão do Rei</p>
+                </div>
+                <div class="quote">
+                    <p>"Nosso destino não é definido pelo sangue que corre em nossas veias, mas pelas escolhas que fazemos." <br>- Livro: Trono Destruído</p>
+                </div>
+                <div class="quote">
+                    <p>"A leitura é uma fonte inesgotável de prazer, mas por incrível que pareça, a quase totalidade não sente esta sede." <br>- Carlos Drummond de Andrade</p>
+                </div>
+                <div class="quote">
+                    <p>"Um livro é um brinquedo feito com letras. Ler é brincar." <br>- Rubem Alves</p>
+                </div>
+                <div class="quote">
+                    <p>"Um livro aberto é um cérebro que fala; fechado, um amigo que espera; esquecido, uma alma que perdoa; destruído, um coração que chora." - Provérbio Indiano</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="books">
+            <h2>Livros</h2>
+            <div class="book-container">
+                <!-- Livros com suas imagens e informações -->
+                <div class="book">
+                    <img src="livro1.jpeg" data-title="A Rainha Vermelha" 
+                         data-synopsis="Sinopse: A Rainha Vermelha é uma saga de fantasia que se passa num mundo dividido entre pessoas comuns e a elite privilegiada." 
+                         data-author-year="Victoria Aveyard, 2015">
+                </div>
+                <div class="book">
+                    <img src="livro2.jpeg" data-title="Espada de Vidro" 
+                         data-synopsis="Sinopse: Mare Barrow enfrenta novos desafios e descobre que os perigos do mundo dos prateados são mais intrincados." 
+                         data-author-year="Victoria Aveyard, 2016">
+                </div>
+                <div class="book">
+                    <img src="livro3.jpeg" data-title="A Prisão do Rei" 
+                         data-synopsis="Sinopse: Mare Barrow enfrenta sua jornada mais desafiadora até agora." 
+                         data-author-year="Victoria Aveyard, 2017">
+                </div>
+                <div class="book">
+                    <img src="livro4.jpeg" data-title="Tempestade de Guerra" 
+                         data-synopsis="Sinopse: Mare Barrow se encontra no centro de uma guerra iminente entre os vermelhos e os prateados." 
+                         data-author-year="Victoria Aveyard, 2018">
+                </div>
+                <div class="book">
+                    <img src="livro5.jpeg" data-title="Trono Destruído" 
+                         data-synopsis="Sinopse: A saga de Mare Barrow e do mundo dividido entre os vermelhos e os prateados alcança seu desfecho épico." 
+                         data-author-year="Victoria Aveyard, 2019">
+                </div>
+                <div class="book">
+                    <img src="livro6.jpeg" data-title="A Rainha Vermelha" 
+                         data-synopsis="Sinopse: Livro 6 da série." 
+                         data-author-year="Victoria Aveyard, 2020">
+                </div>
+                <div class="book">
+                    <img src="livro7.jpeg" data-title="A Rainha Vermelha" 
+                         data-synopsis="Sinopse: Livro 7 da série." 
+                         data-author-year="Victoria Aveyard, 2021">
+                </div>
+                <div class="book">
+                    <img src="livro8.jpeg" data-title="A Rainha Vermelha" 
+                         data-synopsis="Sinopse: Livro 8 da série." 
+                         data-author-year="Victoria Aveyard, 2022">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Thamiriz Foljarini</p> <!-- Rodapé -->
+    </footer>
+
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Botão de fechar o modal -->
+            <h2 id="book-title"></h2>
+            <p id="book-synopsis"></p>
+            <p id="book-author-year"></p>
+        </div>
+    </div>
+</body>
+</html>

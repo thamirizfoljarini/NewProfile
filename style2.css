@@ -1,0 +1,67 @@
+.quote-container {
+    display: flex; /* Usando flexbox para layout */
+    flex-wrap: wrap; /* Permite que as citações quebrem linha */
+}
+
+.quote {
+    width: 100%; /* Cada citação ocupa 100% da largura */
+    padding: 10px; /* Preenchimento interno */
+    border: 1px solid #ddd; /* Borda ao redor da citação */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 10px 0; /* Margem entre citações */
+}
+
+.quote2 {
+    display: flex; /* Usando flexbox para layout */
+    flex-wrap: wrap; /* Permite que as imagens quebrem linha */
+}
+
+.quote2 img {
+    width: 150px; /* Largura fixa para imagens */
+    height: auto; /* Altura automática */
+    margin: 10px; /* Margem entre imagens */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    border: 2px solid #ddd; /* Borda ao redor da imagem */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: transform 0.3s; /* Efeito de transição */
+}
+
+.quote2 img:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Estilos do modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixa o modal na tela */
+    z-index: 1; /* Certifica que o modal esteja acima de outros elementos */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgb(0, 0, 0); /* Cor de fundo preta */
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo com opacidade */
+}
+
+.modal-content {
+    background-color: #fefefe; /* Cor de fundo do conteúdo do modal */
+    margin: 15% auto; /* Margem automática para centralização */
+    padding: 20px; /* Preenchimento interno */
+    border: 1px solid #888; /* Borda ao redor do conteúdo */
+    width: 80%; /* Largura do conteúdo */
+}
+
+.close {
+    color: #aaa; /* Cor do botão de fechar */
+    float: right; /* Alinha à direita */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Fonte em negrito */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Cor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Cursor em forma de mão */
+}
