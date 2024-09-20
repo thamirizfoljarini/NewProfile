@@ -23,18 +23,17 @@ images.forEach(function(image) {
         // Atualiza o conteúdo do modal com as informações do livro
         document.getElementById('book-title').textContent = bookTitle;
         document.getElementById('book-synopsis').textContent = bookSynopsis;
-        document.getElementById('book-author-year').textContent = bookAuthorYear;
+        document.getElementById('book-author-year').textContent = bookAuthorYear
+        });
+
+    // Adiciona um evento de clique para fechar o modal quando clicar no botão de fechar (x)
+        closeBtn.addEventListener('click', function() {
+        modal.style.display = "none"; // Oculta o modal
+        });
+        // Adiciona um evento de clique para fechar o modal quando clicar fora dele
+        modal.addEventListener('click', function() {
+        modal.style.display = "none"; // Oculta o modal
     });
-});
-
-// Adiciona um evento de clique para fechar o modal quando clicar no botão de fechar (x)
-closeBtn.addEventListener('click', function() {
-    modal.style.display = "none"; // Oculta o modal
-});
-
-// Adiciona um evento de clique para fechar o modal quando clicar fora dele
-modal.addEventListener('click', function() {
-    modal.style.display = "none"; // Oculta o modal
 });
 
 // Função para rolar suavemente para uma seção específica
