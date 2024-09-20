@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="style.css"> <!-- Link para os estilos gerais -->
     <link rel="stylesheet" href="style2.css"> <!-- Link para estilos específicos -->
     <script src="script1.js" defer></script> <!-- Script para a funcionalidade do modal -->
+ <style>
+        /* Estilos CSS para as fotos */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +35,7 @@
             "A fotografia é a história que falamos sem palavras." - Destin Sparks
         </p>
     </header>
-
+    <!-- Novo bloco para os botões -->
     <section id="buttons">
         <div class="button-container">
             <button onclick="location.href='index2.html'">Livros</button> <!-- Navega para a página de livros -->
