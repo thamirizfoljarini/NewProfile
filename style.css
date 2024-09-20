@@ -1,43 +1,105 @@
 /* Estilos globais */
 body {
-    font-family: Arial, sans-serif; /* Fonte padrão */
+    font-family: 'roboto', sans-serif; /* Fonte padrão */
     margin: 0; /* Remove margens padrão */
     padding: 20px; /* Preenchimento */
-    background-color: #f4f4f4; /* Cor de fundo */
+    background-color: #f9f9f9; /* Cor de fundo */
 }
 
 header {
-    background: #222527; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto */
-    padding: 20px; /* Preenchimento */
-    text-align: center; /* Centraliza texto */
+    background-color: #ffdab9; /* Cor de fundo do cabeçalho */
+    padding: 25px; 
+    text-align: center;
+    border-radius: 20px; 
 }
 
-h1, h2 {
-    margin: 0; /* Remove margens */
+header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    color: #333;
+    text-align: center;
 }
 
-p {
-    line-height: 1.6; /* Espaçamento entre linhas */
+header p {
+    margin: 15px;
+    font-size: 18px;
 }
+
+h1 {
+    color: #2e2a2a; /* Cor de texto padrão */
+    font-size: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Cor de texto padrão */
+    font-size: 25px;
+}
+
+main {
+    padding: 2px;
+}
+
+section {
+    background-color: #add8e6; /* azul pastel para as seções */
+    padding: 25px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+
+}
+
+section h2 {
+    color: #333; 
+    font-size: 28px; /*tamanho do titulo*/
+}
+
+footer {
+    background-color: #ffdab9; /* Rosa pastel para o rodapé */
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
 
 .button-container {
-    text-align: center; /* Centraliza botões */
-    margin: 20px 0; /* Margem superior e inferior */
+    text-align: center;
 }
 
-button {
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove borda padrão */
-    padding: 10px 20px; /* Preenchimento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor em forma de mão */
-    transition: background-color 0.3s; /* Transição de cor de fundo */
+.button-container button {
+    background-color: #ffdab9; /* Cor de fundo dos botões */
+    color: #333; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 15px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 0 10px;
 }
 
-button:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+.button-container button:hover {
+    background-color: #ffb6c1; /* Cor de fundo dos botões ao passar o mouse */
+}
+
+body index3.html {
+    user-select: none;
 }
 
 footer {
